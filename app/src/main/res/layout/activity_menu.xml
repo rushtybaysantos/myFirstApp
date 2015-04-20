@@ -1,0 +1,114 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="net.payswitch.chippysrevenge.MenuActivity">
+
+
+    <ImageView
+        android:src="@drawable/mainmenu"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/imageView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+
+    <TextView
+        android:paddingLeft="110dp"
+        android:paddingBottom="60dp"
+        android:layout_alignParentBottom="true"
+        android:textStyle="bold"
+        android:text="ain"
+        android:textColor="#a13823"
+        android:textSize="70sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3" />
+
+    <TextView
+        android:paddingLeft="110dp"
+        android:paddingBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:textStyle="bold"
+        android:text="enu"
+        android:textColor="#a13823"
+        android:textSize="70sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView" />
+
+    <TextView
+        android:paddingLeft="4dp"
+        android:paddingBottom="3dp"
+        android:layout_alignParentBottom="true"
+        android:textStyle="bold"
+        android:text="M"
+        android:textColor="#dc1515"
+        android:textSize="130sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2" />
+
+    <ImageButton
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton1"
+        android:src="@drawable/playbtn2"
+        android:background="@null"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_alignStart="@+id/imageButton2" />
+
+    <ImageButton
+        android:src="@drawable/scoresbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton2"
+        android:background="@null"
+        android:layout_marginEnd="32dp"
+        android:layout_below="@+id/textView4"
+        android:layout_alignEnd="@+id/imageView" />
+
+    <ImageButton
+        android:src="@drawable/helpbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton3"
+        android:background="@null"
+        android:layout_below="@+id/imageButton2"
+        android:layout_alignStart="@+id/imageButton2" />
+
+    <TextView android:text="Revenge"
+        android:paddingTop="55dp"
+        android:paddingLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="italic"
+        android:textColor="#ff9399e5"
+        android:textSize="60sp"
+        android:layout_alignParentTop="true" />
+
+    <TextView android:text="Chippy's"
+        android:paddingTop="20dp"
+        android:paddingLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ff0505e5"
+        android:textStyle="bold"
+        android:textSize="60sp"
+        android:id="@+id/textView4" />
+
+    <ImageButton
+        android:src="@drawable/creditsbtn"
+        android:background="@null"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton6"
+        android:layout_alignTop="@+id/textView"
+        android:layout_alignStart="@+id/imageButton3" />
+
+
+</RelativeLayout>
