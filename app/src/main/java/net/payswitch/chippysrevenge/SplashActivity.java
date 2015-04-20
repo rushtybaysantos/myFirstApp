@@ -12,6 +12,18 @@ public class SplashActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
+
+        new Handler().postDelayed(new Runnable() {
+
+            @Override
+            public void run() {
+                intent = new Intent(SplashActivity.this,
+                        MenuActivity.class);
+                startActivity(intent);
+                finish();
+            }
+
+        }, 3000);
     }
 
 
