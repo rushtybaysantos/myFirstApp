@@ -1,6 +1,7 @@
 package net.payswitch.chippysrevenge;
 
 import android.content.Intent;
+import android.content.res.Resources;
 import android.os.Handler;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
@@ -52,4 +53,6 @@ public class SplashActivity extends ActionBarActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
+
 }

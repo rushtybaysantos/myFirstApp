@@ -1,8 +1,10 @@
 package net.payswitch.chippysrevenge;
 
 import android.content.Intent;
+import android.content.res.Resources;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.text.Layout;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -12,7 +14,7 @@ import android.widget.Toast;
 
 public class MenuActivity extends ActionBarActivity {
 
-    ImageButton imgBtn1;
+    ImageButton imgBtn1, imgBtn2, imgBtn3, imgBtn6, imgBtn8;
     Intent intent;
 
     @Override
@@ -21,18 +23,61 @@ public class MenuActivity extends ActionBarActivity {
         setContentView(R.layout.activity_menu);
 
         imgBtn1 = (ImageButton) findViewById(R.id.imageButton1);
+        imgBtn2 = (ImageButton) findViewById(R.id.imageButton2);
+        imgBtn3 = (ImageButton) findViewById(R.id.imageButton3);
+        imgBtn6 = (ImageButton) findViewById(R.id.imageButton6);
+        imgBtn8 = (ImageButton) findViewById(R.id.imageButton8);
+
+
 
         imgBtn1.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(), "CLICKED!", Toast.LENGTH_SHORT).show();
-                intent = new Intent(MenuActivity.this,
-                        PlayActivity.class);
+                //Toast.makeText(getApplicationContext(), "CLICKED!", Toast.LENGTH_SHORT).show();
+                intent = new Intent(MenuActivity.this, PlayActivity.class);
                 startActivity(intent);
                 finish();
             }
         });
+
+        imgBtn2.setOnClickListener((new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                intent = new Intent(MenuActivity.this, ScoresActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        }));
+
+        imgBtn3.setOnClickListener((new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                intent = new Intent(MenuActivity.this, HelpActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        }));
+
+        imgBtn6.setOnClickListener((new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                intent = new Intent(MenuActivity.this, CreditsActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        }));
+
+        imgBtn8.setOnClickListener((new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                intent = new Intent(MenuActivity.this, MenuActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        }));
+
+
     }
 
 

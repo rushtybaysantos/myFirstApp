@@ -1,19 +1,36 @@
 package net.payswitch.chippysrevenge;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.ImageButton;
 
 
 public class PlayActivity extends ActionBarActivity {
+
+    ImageButton imgBtn9;
+    Intent intent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_play);
-    }
 
+
+        imgBtn9 = (ImageButton) findViewById(R.id.imageButton9);
+
+        imgBtn9.setOnClickListener((new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                intent = new Intent(PlayActivity.this, MenuActivity.class);
+                finish();
+                System.exit(0);
+            }
+        }));
+}
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
