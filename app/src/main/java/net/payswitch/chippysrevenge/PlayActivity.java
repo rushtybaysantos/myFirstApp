@@ -30,7 +30,6 @@ public class PlayActivity extends ActionBarActivity {
             public void onClick(View v) {
                 intent = new Intent(PlayActivity.this, MenuActivity.class);
                 finish();
-                System.exit(0);
             }
         }));
 
