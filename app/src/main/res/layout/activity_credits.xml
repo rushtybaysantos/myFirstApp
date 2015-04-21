@@ -63,7 +63,6 @@
         android:layout_alignBottom="@+id/textView22"
         android:paddingLeft="40dp"/>
 
-
     <ImageButton
         android:src="@drawable/backbtn"
         android:background="@null"

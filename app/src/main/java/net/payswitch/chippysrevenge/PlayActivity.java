@@ -7,11 +7,12 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.Toast;
 
 
 public class PlayActivity extends ActionBarActivity {
 
-    ImageButton imgBtn9;
+    ImageButton imgBtn9, imgBtn4, imgBtn5;
     Intent intent;
 
     @Override
@@ -21,6 +22,8 @@ public class PlayActivity extends ActionBarActivity {
 
 
         imgBtn9 = (ImageButton) findViewById(R.id.imageButton9);
+        imgBtn4 = (ImageButton) findViewById(R.id.imageButton4);
+        imgBtn5 = (ImageButton) findViewById(R.id.imageButton5);
 
         imgBtn9.setOnClickListener((new View.OnClickListener() {
             @Override
@@ -30,6 +33,24 @@ public class PlayActivity extends ActionBarActivity {
                 System.exit(0);
             }
         }));
+
+        imgBtn4.setOnClickListener((new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getApplicationContext(),"Ahhhhh!", Toast.LENGTH_SHORT).show();
+                finish();
+
+            }
+        }));
+
+        imgBtn5.setOnClickListener((new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getApplicationContext(),"Ouch! I'm hit.", Toast.LENGTH_SHORT).show();
+                finish();
+            }
+        }));
+
 }
 
     @Override
