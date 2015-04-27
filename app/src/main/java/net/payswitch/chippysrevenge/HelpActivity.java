@@ -11,7 +11,7 @@ import android.widget.ImageButton;
 
 public class HelpActivity extends ActionBarActivity {
 
-    ImageButton imgBtn10;
+    ImageButton Btnback2;
     Intent intent;
 
     @Override
@@ -19,9 +19,9 @@ public class HelpActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_help);
 
-        imgBtn10 = (ImageButton) findViewById(R.id.imageButton10);
+        Btnback2 = (ImageButton) findViewById(R.id.Btnback2);
 
-        imgBtn10.setOnClickListener(new View.OnClickListener() {
+        Btnback2.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {

@@ -11,7 +11,7 @@ import android.widget.ImageButton;
 
 public class ScoresActivity extends ActionBarActivity {
 
-    ImageButton imgBtn;
+    ImageButton Btnback3;
     Intent intent;
 
     @Override
@@ -19,9 +19,9 @@ public class ScoresActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_scores);
 
-    imgBtn = (ImageButton) findViewById(R.id.imageButton);
+    Btnback3 = (ImageButton) findViewById(R.id.Btnback3);
 
-    imgBtn.setOnClickListener(new View.OnClickListener() {
+    Btnback3.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {

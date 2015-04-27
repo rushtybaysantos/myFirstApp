@@ -12,7 +12,7 @@ import android.widget.Toast;
 
 public class PlayActivity extends ActionBarActivity {
 
-    ImageButton imgBtn9, imgBtn4, imgBtn5;
+    ImageButton Btnexit, Btnsword, Btnarcher;
     Intent intent;
 
     @Override
@@ -21,11 +21,11 @@ public class PlayActivity extends ActionBarActivity {
         setContentView(R.layout.activity_play);
 
 
-        imgBtn9 = (ImageButton) findViewById(R.id.imageButton9);
-        imgBtn4 = (ImageButton) findViewById(R.id.imageButton4);
-        imgBtn5 = (ImageButton) findViewById(R.id.imageButton5);
+        Btnexit = (ImageButton) findViewById(R.id.Btnexit);
+        Btnsword = (ImageButton) findViewById(R.id.Btnexit);
+        Btnarcher = (ImageButton) findViewById(R.id.Btnarcher);
 
-        imgBtn9.setOnClickListener((new View.OnClickListener() {
+        Btnexit.setOnClickListener((new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 intent = new Intent(PlayActivity.this, MenuActivity.class);
@@ -33,7 +33,7 @@ public class PlayActivity extends ActionBarActivity {
             }
         }));
 
-        imgBtn4.setOnClickListener((new View.OnClickListener() {
+        Btnsword.setOnClickListener((new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Toast.makeText(getApplicationContext(),"Ahhhhh!", Toast.LENGTH_SHORT).show();
@@ -42,7 +42,7 @@ public class PlayActivity extends ActionBarActivity {
             }
         }));
 
-        imgBtn5.setOnClickListener((new View.OnClickListener() {
+        Btnarcher.setOnClickListener((new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Toast.makeText(getApplicationContext(),"Ouch! I'm hit.", Toast.LENGTH_SHORT).show();
