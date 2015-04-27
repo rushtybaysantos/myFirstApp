@@ -2,10 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin"
+
     tools:context="net.payswitch.chippysrevenge.MenuActivity">
 
 
@@ -13,37 +10,37 @@
         android:src="@drawable/mainmenu"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:id="@+id/imageView"
+        android:id="@+id/Imgbackgroundmenu"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true" />
 
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/imageButton1"
+        android:id="@+id/Btnplay"
         android:src="@drawable/playbtn2"
         android:background="@null"
-        android:layout_alignBottom="@+id/textView4"
-        android:layout_alignStart="@+id/imageButton2" />
+        android:layout_alignBottom="@+id/Txtrevenge"
+        android:layout_alignStart="@+id/Btnscores" />
 
     <ImageButton
         android:src="@drawable/scoresbtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/imageButton2"
+        android:id="@+id/Btnscores"
         android:background="@null"
-        android:layout_marginEnd="32dp"
-        android:layout_below="@+id/textView4"
-        android:layout_alignEnd="@+id/imageView" />
+        android:layout_marginEnd="33dp"
+        android:layout_below="@+id/Txtrevenge"
+        android:layout_alignParentEnd="true" />
 
     <ImageButton
         android:src="@drawable/helpbtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/imageButton3"
+        android:id="@+id/Btnhelp"
         android:background="@null"
-        android:layout_below="@+id/imageButton2"
-        android:layout_alignStart="@+id/imageButton2" />
+        android:layout_below="@+id/Btnscores"
+        android:layout_alignStart="@+id/Btnscores" />
 
     <TextView android:text="Revenge"
         android:paddingTop="55dp"
@@ -54,7 +51,7 @@
         android:textColor="#ff9399e5"
         android:textSize="60sp"
         android:layout_alignParentTop="true"
-        android:id="@+id/textView" />
+        android:id="@+id/Txtrevenge" />
 
     <TextView
         android:text="Chippy's"
@@ -65,25 +62,25 @@
         android:textColor="#ff0505e5"
         android:textStyle="bold"
         android:textSize="60sp"
-        android:id="@+id/textView4" />
+        android:id="@+id/Txtchippys" />
 
     <ImageButton
         android:src="@drawable/creditsbtn"
         android:background="@null"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/imageButton6"
-        android:layout_below="@+id/imageButton3"
-        android:layout_alignStart="@+id/imageButton3" />
+        android:id="@+id/Btncredits"
+        android:layout_below="@+id/Btnhelp"
+        android:layout_alignStart="@+id/Btnhelp" />
 
     <ImageButton
         android:src="@drawable/mainmenuicon"
         android:background="@null"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/imageButton8"
-        android:layout_alignTop="@+id/imageButton3"
-        android:layout_alignEnd="@+id/textView" />
+        android:id="@+id/Btnmenu"
+        android:layout_alignBottom="@+id/Btncredits"
+        android:layout_alignParentStart="true" />
 
 
 </RelativeLayout>

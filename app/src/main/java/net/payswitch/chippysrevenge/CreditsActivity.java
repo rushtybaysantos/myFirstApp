@@ -11,7 +11,7 @@ import android.widget.ImageButton;
 
 public class CreditsActivity extends ActionBarActivity {
 
-    ImageButton imgBtn10;
+    ImageButton Btnback;
     Intent intent;
 
     @Override
@@ -19,9 +19,9 @@ public class CreditsActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_credits);
 
-    imgBtn10 = (ImageButton) findViewById(R.id.imageButton10);
+    Btnback = (ImageButton) findViewById(R.id.Btnback);
 
-        imgBtn10.setOnClickListener((new View.OnClickListener() {
+        Btnback.setOnClickListener((new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 intent = new Intent(CreditsActivity.this, MenuActivity.class);

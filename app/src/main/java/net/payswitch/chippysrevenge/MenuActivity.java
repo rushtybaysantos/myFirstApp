@@ -14,7 +14,7 @@ import android.widget.Toast;
 
 public class MenuActivity extends ActionBarActivity {
 
-    ImageButton imgBtn1, imgBtn2, imgBtn3, imgBtn6, imgBtn8;
+    ImageButton Btnplay, Btnscores, Btnhelp, Btncredits, Btnmenu;
     Intent intent;
 
     @Override
@@ -22,15 +22,15 @@ public class MenuActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
 
-        imgBtn1 = (ImageButton) findViewById(R.id.imageButton1);
-        imgBtn2 = (ImageButton) findViewById(R.id.imageButton2);
-        imgBtn3 = (ImageButton) findViewById(R.id.imageButton3);
-        imgBtn6 = (ImageButton) findViewById(R.id.imageButton6);
-        imgBtn8 = (ImageButton) findViewById(R.id.imageButton8);
+        Btnplay = (ImageButton) findViewById(R.id.Btnplay);
+        Btnscores = (ImageButton) findViewById(R.id.Btnscores);
+        Btnhelp = (ImageButton) findViewById(R.id.Btnhelp);
+        Btncredits = (ImageButton) findViewById(R.id.Btncredits);
+        Btnmenu = (ImageButton) findViewById(R.id.Btnmenu);
 
 
 
-        imgBtn1.setOnClickListener(new View.OnClickListener() {
+        Btnplay.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
@@ -41,7 +41,7 @@ public class MenuActivity extends ActionBarActivity {
             }
         });
 
-        imgBtn2.setOnClickListener((new View.OnClickListener() {
+        Btnscores.setOnClickListener((new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 intent = new Intent(MenuActivity.this, ScoresActivity.class);
@@ -50,7 +50,7 @@ public class MenuActivity extends ActionBarActivity {
             }
         }));
 
-        imgBtn3.setOnClickListener((new View.OnClickListener() {
+        Btnhelp.setOnClickListener((new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 intent = new Intent(MenuActivity.this, HelpActivity.class);
@@ -59,7 +59,7 @@ public class MenuActivity extends ActionBarActivity {
             }
         }));
 
-        imgBtn6.setOnClickListener((new View.OnClickListener() {
+        Btncredits.setOnClickListener((new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 intent = new Intent(MenuActivity.this, CreditsActivity.class);
@@ -68,7 +68,7 @@ public class MenuActivity extends ActionBarActivity {
             }
         }));
 
-        imgBtn8.setOnClickListener((new View.OnClickListener() {
+        Btnmenu.setOnClickListener((new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 intent = new Intent(MenuActivity.this, MenuActivity.class);
