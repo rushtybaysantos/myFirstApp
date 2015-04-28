@@ -1,5 +1,6 @@
 package net.payswitch.chippysrevenge;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.support.v7.app.ActionBarActivity;
@@ -8,13 +9,14 @@ import android.text.Layout;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
 
-public class MenuActivity extends ActionBarActivity {
+public class MenuActivity extends Activity implements View.OnClickListener {
 
-    ImageButton Btnplay, Btnscores, Btnhelp, Btncredits, Btnmenu;
+    Button btnPlay, btnScores, btnHelp;
     Intent intent;
 
     @Override
@@ -22,61 +24,20 @@ public class MenuActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
 
-        Btnplay = (ImageButton) findViewById(R.id.Btnplay);
-        Btnscores = (ImageButton) findViewById(R.id.Btnscores);
-        Btnhelp = (ImageButton) findViewById(R.id.Btnhelp);
-        Btncredits = (ImageButton) findViewById(R.id.Btncredits);
-        Btnmenu = (ImageButton) findViewById(R.id.Btnmenu);
+        btnPlay = (Button) this.findViewById(R.id.btn_play);
 
+        btnPlay.setOnClickListener(this);
 
+    }
 
-        Btnplay.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View v) {
 
-            @Override
-            public void onClick(View v) {
-                //Toast.makeText(getApplicationContext(), "CLICKED!", Toast.LENGTH_SHORT).show();
-                intent = new Intent(MenuActivity.this, PlayActivity.class);
-                startActivity(intent);
-                finish();
-            }
-        });
+        if (v == this.btnPlay) {
+            intent = new Intent(MenuActivity.this, PlayActivity.class);
+        }
 
-        Btnscores.setOnClickListener((new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                intent = new Intent(MenuActivity.this, ScoresActivity.class);
-                startActivity(intent);
-                finish();
-            }
-        }));
-
-        Btnhelp.setOnClickListener((new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                intent = new Intent(MenuActivity.this, HelpActivity.class);
-                startActivity(intent);
-                finish();
-            }
-        }));
-
-        Btncredits.setOnClickListener((new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                intent = new Intent(MenuActivity.this, CreditsActivity.class);
-                startActivity(intent);
-                finish();
-            }
-        }));
-
-        Btnmenu.setOnClickListener((new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                intent = new Intent(MenuActivity.this, MenuActivity.class);
-                startActivity(intent);
-                finish();
-            }
-        }));
-
+        startActivity(intent);
 
     }
 
@@ -102,4 +63,6 @@ public class MenuActivity extends ActionBarActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
+
 }

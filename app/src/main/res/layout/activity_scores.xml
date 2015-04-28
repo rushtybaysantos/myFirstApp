@@ -1,50 +1,9 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="net.payswitch.chippysrevenge.ScoresActivity">
-
-
-    <ImageView
-        android:src="@drawable/scoresback"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:id="@+id/Imgbackgroundscores"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true" />
-
-    <ImageView
-        android:src="@drawable/paperscroll2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/Imgpaperscroll"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true" />
-
-    <ImageView
-        android:src="@drawable/scores2"
-        android:layout_width="wrap_content"
-        android:layout_height="50dp"
-        android:id="@+id/Imgscores"
-        android:layout_above="@+id/Lstofscores"
-        android:layout_centerHorizontal="true" />
-
-    <ListView
-        android:layout_width="200dp"
-        android:layout_height="150dp"
-        android:id="@+id/Lstofscores"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
-
-    <ImageButton
-        android:src="@drawable/backbtn"
-        android:paddingRight="10dp"
-        android:paddingBottom="10dp"
-        android:background="@null"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/Btnback3"
-        android:layout_alignParentBottom="true"
-        android:layout_alignEnd="@+id/Imgbackgroundscores" />
 
 
 </RelativeLayout>

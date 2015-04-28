@@ -1,74 +1,8 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-
     tools:context="net.payswitch.chippysrevenge.CreditsActivity">
 
-    <ImageButton
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:src="@drawable/creditsback"
-        android:id="@+id/Btnback" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Credits..."
-        android:textSize="50dp"
-        android:textColor="#000"
-        android:textStyle="bold"
-        android:paddingTop="20dp"
-        android:paddingLeft="10dp"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="bla bla bla"
-        android:textSize="20dp"
-        android:paddingTop="90dp"
-        android:paddingLeft="40dp"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="ble ble ble"
-        android:textSize="20dp"
-        android:paddingTop="120dp"
-        android:paddingLeft="40dp"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="bli bli bli"
-        android:textSize="20dp"
-        android:paddingTop="150dp"
-        android:paddingLeft="40dp"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="blo blo blo"
-        android:textSize="20dp"
-        android:paddingTop="180dp"
-        android:id="@+id/textView22"
-        android:paddingLeft="40dp"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="blu blu blu"
-        android:textSize="20dp"
-        android:layout_alignBottom="@+id/textView22"
-        android:paddingLeft="40dp"/>
-
-    <ImageButton
-        android:src="@drawable/backbtn"
-        android:background="@null"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="42dp"
-        android:id="@+id/imageButton10"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginBottom="33dp" />
 </RelativeLayout>

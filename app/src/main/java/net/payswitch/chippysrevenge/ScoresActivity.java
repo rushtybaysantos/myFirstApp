@@ -1,5 +1,6 @@
 package net.payswitch.chippysrevenge;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
@@ -9,7 +10,7 @@ import android.view.View;
 import android.widget.ImageButton;
 
 
-public class ScoresActivity extends ActionBarActivity {
+public class ScoresActivity extends Activity {
 
     ImageButton Btnback3;
     Intent intent;
@@ -19,17 +20,6 @@ public class ScoresActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_scores);
 
-    Btnback3 = (ImageButton) findViewById(R.id.Btnback3);
-
-    Btnback3.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View v) {
-                intent = new Intent(ScoresActivity.this, MenuActivity.class);
-                startActivity(intent);
-                finish();
-            }
-        });
 
     }
 

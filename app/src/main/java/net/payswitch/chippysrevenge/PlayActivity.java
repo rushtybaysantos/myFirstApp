@@ -1,5 +1,6 @@
 package net.payswitch.chippysrevenge;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
@@ -10,7 +11,7 @@ import android.widget.ImageButton;
 import android.widget.Toast;
 
 
-public class PlayActivity extends ActionBarActivity {
+public class PlayActivity extends Activity {
 
     ImageButton Btnexit, Btnsword, Btnarcher;
     Intent intent;
@@ -19,36 +20,6 @@ public class PlayActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_play);
-
-
-        Btnexit = (ImageButton) findViewById(R.id.Btnexit);
-        Btnsword = (ImageButton) findViewById(R.id.Btnexit);
-        Btnarcher = (ImageButton) findViewById(R.id.Btnarcher);
-
-        Btnexit.setOnClickListener((new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                intent = new Intent(PlayActivity.this, MenuActivity.class);
-                finish();
-            }
-        }));
-
-        Btnsword.setOnClickListener((new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(getApplicationContext(),"Ahhhhh!", Toast.LENGTH_SHORT).show();
-                finish();
-
-            }
-        }));
-
-        Btnarcher.setOnClickListener((new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(getApplicationContext(),"Ouch! I'm hit.", Toast.LENGTH_SHORT).show();
-                finish();
-            }
-        }));
 
 }
 

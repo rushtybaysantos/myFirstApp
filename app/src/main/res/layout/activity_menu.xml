@@ -2,85 +2,72 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    tools:context="net.payswitch.chippysrevenge.MenuActivity"
+    android:background="@drawable/bg_menu"
+    >
 
-    tools:context="net.payswitch.chippysrevenge.MenuActivity">
+    <RelativeLayout
+        android:layout_width="250dp"
+        android:layout_height="175dp"
+        android:background="@color/transparent_white"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        >
 
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/img_menu_title"
+            android:padding="@dimen/padding_min"
+            />
 
-    <ImageView
-        android:src="@drawable/mainmenu"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:id="@+id/Imgbackgroundmenu"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true" />
+    </RelativeLayout>
 
-    <ImageButton
+    <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/Btnplay"
-        android:src="@drawable/playbtn2"
-        android:background="@null"
-        android:layout_alignBottom="@+id/Txtrevenge"
-        android:layout_alignStart="@+id/Btnscores" />
+        android:layout_centerVertical="true">
 
-    <ImageButton
-        android:src="@drawable/scoresbtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/Btnscores"
-        android:background="@null"
-        android:layout_marginEnd="33dp"
-        android:layout_below="@+id/Txtrevenge"
-        android:layout_alignParentEnd="true" />
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="75dp"
+            android:background="@drawable/bg_button"
+            android:id="@+id/btn_play"
+            android:text="PLAY"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp"
+            />
 
-    <ImageButton
-        android:src="@drawable/helpbtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/Btnhelp"
-        android:background="@null"
-        android:layout_below="@+id/Btnscores"
-        android:layout_alignStart="@+id/Btnscores" />
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="75dp"
+            android:layout_below="@+id/btn_play"
+            android:background="@drawable/bg_button"
+            android:id="@+id/btn_scores"
+            android:text="SCORES"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp"
+            />
 
-    <TextView android:text="Revenge"
-        android:paddingTop="55dp"
-        android:paddingLeft="10dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textStyle="italic"
-        android:textColor="#ff9399e5"
-        android:textSize="60sp"
-        android:layout_alignParentTop="true"
-        android:id="@+id/Txtrevenge" />
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="75dp"
+            android:layout_below="@+id/btn_scores"
+            android:background="@drawable/bg_button"
+            android:id="@+id/btn_help"
+            android:text="HELP"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp"
+            />
 
-    <TextView
-        android:text="Chippy's"
-        android:paddingTop="20dp"
-        android:paddingLeft="10dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="#ff0505e5"
-        android:textStyle="bold"
-        android:textSize="60sp"
-        android:id="@+id/Txtchippys" />
+    </RelativeLayout>
 
-    <ImageButton
-        android:src="@drawable/creditsbtn"
-        android:background="@null"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/Btncredits"
-        android:layout_below="@+id/Btnhelp"
-        android:layout_alignStart="@+id/Btnhelp" />
-
-    <ImageButton
-        android:src="@drawable/mainmenuicon"
-        android:background="@null"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/Btnmenu"
-        android:layout_alignBottom="@+id/Btncredits"
-        android:layout_alignParentStart="true" />
 
 
 </RelativeLayout>

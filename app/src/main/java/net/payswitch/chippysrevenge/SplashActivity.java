@@ -1,5 +1,6 @@
 package net.payswitch.chippysrevenge;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.os.Handler;
@@ -9,7 +10,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 
-public class SplashActivity extends ActionBarActivity {
+public class SplashActivity extends Activity {
 
     Intent intent;
 
