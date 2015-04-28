@@ -1,10 +1,56 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="net.payswitch.chippysrevenge.PlayActivity"
-    android:background="#8D8D8D">
+    android:background="@color/light_green">
 
+    <RelativeLayout
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_green_gradient"
+        android:layout_margin="10dp"
+        >
+        
+        <TextView
+            android:id="@+id/lbl_level"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="LEVEL"
+            android:textSize="48sp"
+            android:textStyle="bold"
+            android:layout_marginTop="25dp"
+            android:textColor="@color/black"
+            />
 
+        <TextView
+            android:id="@+id/lbl_level_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/lbl_level"
+            android:text="23"
+            android:textSize="48sp"
+            android:textStyle="bold"
+            android:layout_marginTop="50dp"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/lbl_level_no"
+            android:text="Nuts will roll"
+            android:textSize="48sp"
+            android:textStyle="bold"
+            android:layout_marginTop="50dp"
+            android:textColor="@color/black"
+            />
+        
+    </RelativeLayout>
 
 
 
