@@ -28,6 +28,14 @@ public class MenuActivity extends Activity implements View.OnClickListener {
 
         btnPlay.setOnClickListener(this);
 
+        btnScores = (Button) this.findViewById(R.id.btn_scores);
+
+        btnScores.setOnClickListener(this);
+
+        btnHelp = (Button) this.findViewById(R.id.btn_help);
+
+        btnHelp.setOnClickListener(this);
+
     }
 
     @Override
@@ -35,6 +43,12 @@ public class MenuActivity extends Activity implements View.OnClickListener {
 
         if (v == this.btnPlay) {
             intent = new Intent(MenuActivity.this, PlayActivity.class);
+        }
+        else if(v == this.btnScores) {
+            intent = new Intent(MenuActivity.this, ScoresActivity.class);
+        }
+        else if (v == this.btnHelp){
+            intent = new Intent(MenuActivity.this, HelpActivity.class);
         }
 
         startActivity(intent);

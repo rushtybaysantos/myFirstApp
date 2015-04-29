@@ -3,7 +3,63 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="net.payswitch.chippysrevenge.HelpActivity">
+    tools:context="net.payswitch.chippysrevenge.HelpActivity"
+    android:background="@drawable/bg_help">
 
 
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent_white"
+        android:layout_margin="10dp">
+
+
+    <ImageButton
+        android:id="@+id/btn_mainmenu"
+        android:layout_centerHorizontal="true"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:background="@drawable/img_menu_title"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_margin="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:background="@color/light_green">
+
+        <TextView
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="             This is the help bla ble bli blo blu I dont know what to do. ow yeah .! Any idea about this section?
+
+            Hi! We dont die! We multiply!
+             "
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_margin="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:background="@color/transparent_brown">
+
+        <TextView
+            android:layout_margin="5dp"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Masyadong malabo yung text kaya po di ko na makopya . :) Thank you very much! hohoho"/>
+
+        </RelativeLayout>
 </RelativeLayout>

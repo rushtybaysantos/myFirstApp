@@ -6,7 +6,9 @@
     tools:context="net.payswitch.chippysrevenge.PlayActivity"
     android:background="@color/light_green">
 
+
     <RelativeLayout
+
         android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:background="@drawable/bg_green_gradient"
@@ -51,6 +53,86 @@
             />
         
     </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_alignParentRight="true"
+        android:background="@color/light_green">
+
+        <ImageView
+            android:id="@+id/img_play"
+            android:layout_width="wrap_content"
+            android:layout_height="220dp"
+            android:background="@drawable/playimage"/>
+
+        <TextView
+            android:id="@+id/lbl_health"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HEALTH"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/img_play"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <ImageButton
+            android:id="@+id/btn_archer"
+            android:layout_below="@+id/lbl_health"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_archer"
+            android:layout_marginLeft="40dp"/>
+
+        <ImageButton
+            android:id="@+id/btn_sword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_sword"
+            android:layout_below="@+id/lbl_health"
+            android:layout_centerHorizontal="true"
+
+            />
+
+        <ImageButton
+            android:id="@+id/btn_health"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/ic_health"
+            android:layout_below="@id/lbl_health"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="40dp"/>
+
+        <TextView
+            android:id="@+id/lbl_nutsmoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="123555"
+            android:layout_below="@+id/btn_archer"
+            android:textSize="30sp"
+            android:textColor="@color/red"
+            android:textStyle="bold"
+            android:layout_marginLeft="30dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="nuts"
+            android:layout_below="@+id/btn_sword"
+
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:layout_marginLeft="135dp"/>
+
+
+
+
+
+
+        </RelativeLayout>
+
 
 
 

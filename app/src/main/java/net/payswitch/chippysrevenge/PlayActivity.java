@@ -2,6 +2,7 @@ package net.payswitch.chippysrevenge;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.media.Image;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -13,15 +14,14 @@ import android.widget.Toast;
 
 public class PlayActivity extends Activity {
 
-    ImageButton Btnexit, Btnsword, Btnarcher;
-    Intent intent;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_play);
+    }
 
-}
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

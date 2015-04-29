@@ -7,18 +7,30 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 
 
 public class HelpActivity extends Activity {
 
-    ImageButton Btnback2;
+    ImageButton btn_mainmenu;
     Intent intent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_help);
+
+        btn_mainmenu = (ImageButton) findViewById(R.id.btn_mainmenu);
+        btn_mainmenu.setOnClickListener(new View.OnClickListener() {
+
+             @Override
+                 public void onClick(View v) {
+                     intent = new Intent(HelpActivity.this, MenuActivity.class);
+                     startActivity(intent);
+                     finish();
+              }
+        });
 
     }
 

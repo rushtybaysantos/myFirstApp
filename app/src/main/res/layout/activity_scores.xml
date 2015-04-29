@@ -3,7 +3,57 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="net.payswitch.chippysrevenge.ScoresActivity">
+    tools:context="net.payswitch.chippysrevenge.ScoresActivity"
+    android:background="@drawable/bg_scores">
+
+
+    <RelativeLayout
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="300dp"
+        android:layout_height="300dp" >
+
+
+        <ListView
+            android:id="@+id/list"
+            android:layout_marginTop="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="200dp"
+            android:layout_height="190dp"></ListView>
+
+        <ImageView
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:background="@drawable/img_paperscroll"
+            />
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:background="@drawable/img_scores_title"/>
+
+    <RelativeLayout
+        android:layout_margin="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent_white">
+
+        <ImageButton
+            android:id="@+id/btn_mainmenu"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:background="@drawable/img_menu_title"/>
+
+    </RelativeLayout>
 
 
 </RelativeLayout>
