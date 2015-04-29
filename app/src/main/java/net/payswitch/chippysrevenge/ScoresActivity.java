@@ -11,6 +11,8 @@ import android.widget.ImageButton;
 import android.widget.ListView;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 
 public class ScoresActivity extends Activity {
@@ -38,14 +40,11 @@ public class ScoresActivity extends Activity {
             }
         });
 
-        String[] scores = new String[] {"Rushty  123555 nuts", "Meynard  122555 nuts", "Ian  121555 nuts", "Glaze 120555 nuts", "Ayiesha  5 nuts"};
+        List<String> list = new ArrayList<String>(Arrays.asList(getResources()
+                .getStringArray(R.array.list_scores)));
 
-        ArrayList<String> list = new ArrayList<String>();
-        for (int n =0; n < scores.length; n++) {
-            list.add(scores[n]);
-        }
-
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, list);
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(getApplicationContext(),
+                android.R.layout.simple_list_item_1, list);
         lv.setAdapter(adapter);
 
     }

@@ -8,4 +8,11 @@
     <string name="title_activity_scores">ScoresActivity</string>
     <string name="title_activity_help">HelpActivity</string>
     <string name="title_activity_credits">CreditsActivity</string>
+
+    <string-array name="list_scores">
+        <item>Rushty</item>
+        <item>Glaze</item>
+        <item>Ayiesha</item>
+        <item>Ian</item>
+    </string-array>
 </resources>
