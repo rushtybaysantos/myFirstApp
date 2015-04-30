@@ -10,9 +10,18 @@
     <string name="title_activity_credits">CreditsActivity</string>
 
     <string-array name="list_scores">
-        <item>Rushty</item>
-        <item>Glaze</item>
-        <item>Ayiesha</item>
-        <item>Ian</item>
+        <item>Rushty   255698 nuts</item>
+        <item>Meynard  245432 nuts</item>
+        <item>Ian      223453 nuts</item>
+        <item>Glaze    123456 nuts</item>
+        <item>Lovely   112211 nuts</item>
+        <item>Mae      111234 nuts</item>
+        <item>Matilda  100254 nuts</item>
+        <item>Amanda    99658 nuts</item>
+        <item>Maria O.  98126 nuts</item>
+        <item>Ayiesha       5 nuts</item>
     </string-array>
+    <string name="title_activity_play2">Play2Activity</string>
+    <string name="title_activity_play3">play3Activity</string>
+    <string name="title_activity_play4">play4Activity</string>
 </resources>

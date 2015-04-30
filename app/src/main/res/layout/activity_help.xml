@@ -14,16 +14,10 @@
         android:layout_margin="10dp">
 
 
-    <ImageButton
-        android:id="@+id/btn_mainmenu"
-        android:layout_centerHorizontal="true"
-        android:layout_width="100dp"
-        android:layout_height="70dp"
-        android:background="@drawable/img_menu_title"/>
-
     </RelativeLayout>
 
     <RelativeLayout
+        android:id="@+id/layout_lbl"
         android:layout_margin="10dp"
         android:layout_alignParentRight="true"
         android:layout_width="250dp"
@@ -31,6 +25,7 @@
         android:background="@color/light_green">
 
         <TextView
+            android:id="@+id/lbl_help"
             android:layout_marginTop="30dp"
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp"
@@ -51,7 +46,8 @@
         android:layout_alignParentBottom="true"
         android:layout_width="300dp"
         android:layout_height="80dp"
-        android:background="@color/transparent_brown">
+        android:background="@color/transparent_brown"
+        android:id="@+id/relativeLayout">
 
         <TextView
             android:layout_margin="5dp"
@@ -62,4 +58,27 @@
             android:text="Masyadong malabo yung text kaya po di ko na makopya . :) Thank you very much! hohoho"/>
 
         </RelativeLayout>
+
+
+    <RelativeLayout
+        android:background="@color/transparent_white"
+        android:layout_margin="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/layout_lbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+       <Button
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:text="Main Menu"
+        android:id="@+id/btn_mainmenu"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:background="@drawable/androidbluesquarebutton"/>
+
+
+    </RelativeLayout>
+
 </RelativeLayout>

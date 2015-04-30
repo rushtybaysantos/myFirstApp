@@ -1,5 +1,4 @@
 package net.payswitch.chippysrevenge;
-
 import android.app.Activity;
 import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
@@ -13,7 +12,7 @@ import android.widget.ImageButton;
 
 public class HelpActivity extends Activity {
 
-    ImageButton btn_mainmenu;
+    Button btn_mainmenu;
     Intent intent;
 
     @Override
@@ -21,7 +20,7 @@ public class HelpActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_help);
 
-        btn_mainmenu = (ImageButton) findViewById(R.id.btn_mainmenu);
+        btn_mainmenu = (Button) findViewById(R.id.btn_mainmenu);
         btn_mainmenu.setOnClickListener(new View.OnClickListener() {
 
              @Override

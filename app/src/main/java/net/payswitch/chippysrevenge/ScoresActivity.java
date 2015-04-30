@@ -7,6 +7,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ListView;
 
@@ -17,7 +18,7 @@ import java.util.List;
 
 public class ScoresActivity extends Activity {
 
-    ImageButton btn_mainmenu;
+    Button btn_mainmenu;
     ListView lv;
     Intent intent;
 
@@ -26,7 +27,7 @@ public class ScoresActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_scores);
 
-        btn_mainmenu = (ImageButton) findViewById(R.id.btn_mainmenu);
+        btn_mainmenu = (Button) findViewById(R.id.btn_mainmenu);
         lv = (ListView) findViewById(R.id.list);
 
 
@@ -40,11 +41,15 @@ public class ScoresActivity extends Activity {
             }
         });
 
+        //Create list of items
         List<String> list = new ArrayList<String>(Arrays.asList(getResources()
                 .getStringArray(R.array.list_scores)));
 
+        //build adapter
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(getApplicationContext(),
                 android.R.layout.simple_list_item_1, list);
+
+        //configure adapter to listview
         lv.setAdapter(adapter);
 
     }
